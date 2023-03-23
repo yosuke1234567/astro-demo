@@ -1,0 +1,51 @@
+---
+---
+
+<div class="p-hero" id="top">
+    <h2>Build the web you want</h2>
+    <p>
+        Astro is the all-in-one web framework designed for speed. 
+        Pull your content from anywhere and deploy everywhere, 
+        all powered by your favorite UI components and libraries.
+    </p>
+    <div class="p-hero__bottom">
+        <a href="https://docs.astro.build/">Get Started</a>
+    </div>
+</div>
+
+<style is:global lang="scss">
+#main {
+    .p-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12vw 0;
+        text-align: center;
+
+        h2 {
+            margin: 0;
+            font-size: 12vw;
+        }
+
+        p {
+            width: 88vw;
+            margin: 2em auto;
+            line-height: 2;
+        }
+    }
+
+    .p-hero__bottom {
+        display: flex;
+        align-items: center;
+        margin-top: 4vw;
+        font-size: 4.5vw;
+
+        a {
+            padding: 1em 2em;
+            border-radius: 4em;
+            background-color: #222;
+            color: #fff;
+        }
+    }
+}
+</style>

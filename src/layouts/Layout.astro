@@ -1,0 +1,44 @@
+---
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{title}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <div id="main">
+            <slot />
+        </div>
+        <script
+            is:inline
+            src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+        ></script>
+        <script is:inline src="/js/script.js"></script>
+    </body>
+</html>
+
+<style is:inline>
+/* 
+    基本使わない
+    is:inline 必須（build時にcssが別ファイルで生成されるため。）
+    グローバルなスタイルをあてる場合、PC、SPそれぞれに書く
+*/
+</style>

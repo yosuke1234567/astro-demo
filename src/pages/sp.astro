@@ -1,0 +1,34 @@
+---
+import Slider from "@/components/sp/Slider.astro";
+import Header from "@/components/sp/Header.astro";
+import Hero from "@/components/sp/Hero.astro";
+import Layout from "@/layouts/Layout.astro";
+
+---
+
+<Layout title="SP Layout">
+    <Header />
+    <Hero />
+    <Slider />
+</Layout>
+
+<style is:global lang="scss">
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    #main {
+        font-family: "Lora", serif;
+        font-size: 4vw;
+        color: #222;
+    
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+</style>

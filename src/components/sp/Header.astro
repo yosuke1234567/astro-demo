@@ -1,0 +1,39 @@
+---
+
+---
+
+<header class="p-header">
+    <h1>Demo</h1>
+    <nav>
+        <ul>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style is:global lang="scss">
+    .p-header {
+        display: flex;
+        align-items: center;
+        width: 90vw;
+        padding: 2vw 8vw;
+        margin: 16px auto 0;
+        box-shadow: 0 1px 12px #ddd;
+
+        h1 {
+            margin: 0 auto 0 0;
+            font-size: 6vw;
+            font-weight: normal;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li:not(:first-child) {
+            margin-left: 32px;
+        }
+    }
+</style>
